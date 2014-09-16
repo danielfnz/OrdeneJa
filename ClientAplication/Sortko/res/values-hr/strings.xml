@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- General strings -->
+<string name="app_name">Sortko</string>
+<string name="sortingover">Sortiranje završeno!</string>
+<string name="sortingFault">&quot;Neispravan korak sortiranja!&quot;</string>
+<string name="select_sort">Odaberi vrstu sortiranja!</string>
+<string name="username_Default">Ferko Ferić</string>
+<string name="uniquestudentid_Default">0000000000</string>
+
+<!-- Layout - main.xml -->
+<string name="username">Ime i prezime</string>
+<string name="username_hint">Koristi se za prikaz na listi najboljih igrača</string>
+<string name="uniquestudentid">JMBAG</string>
+<string name="uniquestudentid_hint">JMBAG se koristi za vođenje evidencije</string>
+<string name="sortit_btntext">Sortiraj</string>
+<string name="results_btntext">Rezultati</string>
+
+<!-- Menu - options_menu.xml -->
+<string name="menu_help">Pomoć</string>
+<string name="menu_about">O Sortku</string>
+
+<!-- Layout - result.xml -->
+<string name="achievedresult">Ostvareni rezultat:</string>
+<string name="selectsort">Odaberi sort</string>
+<string name="overallresults">Ukupni rezultati</string>
+<string name="overall">ukupno</string>
+<string name="empty_list">Lista se ne može dohvatiti.</string>
+
+<!-- Layout - sort.xml -->
+<string name="sort_name_default">Generički sort</string>
+<string name="change_sort_type">promijeni</string>
+<string name="sortHelpMessage">Zamjeni dva broja pritiskom na gumb</string>
+
+<!-- Code - ResultsActivity.java -->
+<string name="progress_title">Pričekajte...</string>
+<string name="progress_description">Dohvaćanje podataka ...</string>
+
+<!-- Code - BubbleSortPosition.java -->
+<string name="bubble_sortStartMessage">Započnite algoritam tako da najprije usporedite prva dva elementa. Ako je lijevi veći od desnog zamijenite ih te nastavite uspoređivati udesno.</string>
+<string name="bubble_bubbleMessage">Zamijenite susjedne elemente ako je lijevi veći od desnog.</string>
+<string name="bubble_startMessage" formatted="false">Krenite u %d. prolaz polja s lijeva. %s</string>
+<string name="bubble_sortErrorMessage" formatted="false">Zadnja uspješna zamjena bila je na indexima %d i %d. Nastavite uspoređivati brojeve udesno.</string>
+<string name="bubble_bubbleErrorMessage">Kod Bubble sorta se uvijek mijenjaju susjedni elementi. %s</string>
+
+<!-- Code - InsertionSortPosition.java -->
+<string name="insert_sortStartMessage">Započnite sortiranje tako da drugi element polja spremite u pomoćnu varijablu dolje desno.</string>
+<string name="insert_startMessage" formatted="false">Krenite u %d. prolaz polja počevši s %d. elementom. Koristite pomoćnu varijablu kako bi pohranili taj element.</string>
+<string name="insert_endMessage" formatted="false">Završite %d. prolaz polja koristeći pomoćnu varijablu.</string>
+<string name="insert_copyFirstMessage" formatted="false">Pomičite elemente u desno (od %d. elementa) krečući se prema početku polja dok ne pronađete odgovarajuće mjesto za pomoćnu varijablu.</string>
+<string name="insert_copyMessage" formatted="false">Nastavite sortiranje tako da pomaknete %d. element udesno.</string>
+<string name="insert_copyErrorMessage">Elementi se pomiču tako da se lijevi element kopira u njemu susjedni desni element ukoliko je lijevi veći od elementa u pomoćnoj varijabli.</string>
+<string name="insert_copyOrderErrorMessage">Prilikom kopiranja elementa niza paziti na redoslijed kopiranja. Prvo se odabire element koji se kopira, a zatim odredište kopiranja.</string>
+<string name="insert_errorMessage_suggestCopyHelper" formatted="false">Pogrešan korak algoritma. Sljedeći korak algoritma bi trebao biti kopiranje pomoćne varijable na %d. element niza.</string>
+<string name="insert_errorMessage_suggestCopyIntoHelper" formatted="false">Pogrešan korak algoritma. Sljedeći korak algoritma bi trebao biti kopiranje %d. elementa niza u pomoćnu varijablu.</string>
+<string name="insert_errorMessage_suggestCopyIntoSlot" formatted="false">Pogrešan korak algoritma. Sljedeći korak algoritma bi trebao biti kopiranje %d. elementa niza na %d. element niza.</string>
+
+<!-- Code - QuickSortPosition.java -->
+<string name="quick_sortStartMessage">Započnite sortiranje računajući medijan od 1., 4. i 8. elementa tako da ih usporedite i po potrebi zamijenite. Ako nema zamjena, sakrijte stožer na predzadnju poziciju.</string>
+<string name="quick_median" formatted="false">Izračunajte medijan od %d. elementa, (lijevog) srednjeg  i %d. elementa tako da ih usporedite i po potrebi zamijenite.</string>
+<string name="quick_hidden">Sakrijte stožer na predzadnju poziciju.</string>
+<string name="quick_regularQs" formatted="false">Pronađite broj veći ili jednak stožeru gledano na desno od %d. elementa.	Pronađite broj manji ili jednak stožeru na lijevo od %d. elementa. Napravite zamjenu ili vratite stožer.</string>
+<string name="quick_returnSt" formatted="false">Vratite stožer. (%d. element)</string>
+<string name="quick_insertion" formatted="false">Sortirajte podniz od %d. do %d. elementa prema Insertion sort algoritmu.</string>
+<string name="quick_median_12" formatted="false">%s (prvi i srednji element)</string>
+<string name="quick_median_13" formatted="false">%s (prvi i zadnji element)</string>
+<string name="quick_median_23" formatted="false">%s (srednji i zadnji element)</string>
+<string name="quick_hidden_hint" formatted="false">%s (zamijenite ga s %d. elementom)</string>
+<string name="quick_regularQs_continue" formatted="false">Nastavite dalje. %s</string>
+
+
+<!-- Code - SelectionSortPosition.java -->
+<string name="select_sortStartMessage">Započnite sortiranje zamjenom koja postavlja najmanji element na početak polja.</string>
+<string name="select_mainMessage" formatted="false">Zamjenite najmanji element polja desno od %d. elementa s %d. elementom.</string>		
+<string name="select_errorMessage" formatted="false">Polje je sada sortirano do %d. elementa. Nastavite sortiranje zamjenom koja postavlja najmanji element desno od %d. elementa na mjesto %d. elementa.</string>
+
+<!-- Code - ShellSortPosition.java -->
+<string name="shell_stepStart" formatted="false">Započnite sortiranje s korakom hk = %d. Najprije kopirajte %d. element u pomoćnu varijablu.</string>
+<string name="shell_stepContinue" formatted="false">Nastavite sortiranje s korakom hk = %d. Najprije kopirajte %d. element u pomoćnu varijablu.</string>
+<string name="shell_stepCompare" formatted="false">Usporedite %d. i %d. element. Po potrebi napravite pomak %d. elementa na poziciju %d. elementa.</string>
+<string name="shell_stepReturn">Obavite povratak pomoćne varijable na odgovarajuću poziciju.</string>
+<string name="shell_stepInsertionSort">Obavite sortiranje Insertion sortom. (hk = 1)</string>
+<string name="shell_copyOrderErrorMessage">Prilikom kopiranja elemenata niza paziti na redoslijed kopiranja. Prvo se odabire element koji se kopira, a zatim odredište kopiranja.</string>
+
+<!-- Context menu URLs -->
+<string name="url_help">http://nihao.fer.hr/Sortko/instructionshr.html</string>
+<string name="url_about">http://nihao.fer.hr/Sortko/defaulthr.html</string>
+
+</resources>

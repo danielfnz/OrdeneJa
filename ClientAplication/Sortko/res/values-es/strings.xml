@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- General strings -->
+<string name="app_name">Sortko</string>
+<string name="sortingover">Ordenamiento completado!</string>
+<string name="sortingFault">&quot;Ordenamiento incorrecto! Inténtalo de nuevo!&quot;</string>
+<string name="select_sort">Selecciona el algoritmo de ordenamiento!</string>
+<string name="username_Default">John Doe</string>
+<string name="uniquestudentid_Default">0000000000</string>
+
+<!-- Layout - main.xml -->
+<string name="username">Nombre y apellidos</string>
+<string name="username_hint">Usado para la entrada en la lista de mejores jugadores </string>
+<string name="uniquestudentid">ID de estudiante</string>
+<string name="uniquestudentid_hint">El ID de estudiante es usado para registrar el progreso en la lista</string>
+<string name="sortit_btntext">Ordenar</string>
+<string name="results_btntext">Resultados</string>
+
+<!-- Layout - result.xml -->
+<string name="achievedresult">Resultados:</string>
+<string name="selectsort">Ordenamiento</string>
+<string name="overallresults">Resultados generales</string>
+<string name="overall">general</string>
+<string name="empty_list">La lista no pudo ser recuperada.</string>
+
+<!-- Layout - sort.xml -->
+<string name="sort_name_default">Ordenamiento general</string>
+<string name="change_sort_type">Cambiar</string>
+<string name="sortHelpMessage">Cambia los lugares de dos elementos tocando sus células.</string>
+
+<!-- Code - ResultsActivity.java -->
+<string name="progress_title">Por favor espera...</string>
+<string name="progress_description">Obteniendo datos...</string>
+
+<!-- Code - BubbleSortPosition.java -->
+<string name="bubble_sortStartMessage">Empieza el algoritmo comparando los dos primeros elementos. Si el de la izquierda es mayor que el de la derecha, intercambialos y continua con las comparaciones de los elementos a derechas.</string>
+<string name="bubble_bubbleMessage">Intercambia los elementos vecinos si el de la izquierda es mayor que el de la derecha.</string>
+<string name="bubble_startMessage" formatted="false">Inicia el paso #%d desde la izquierda. %s</string>
+<string name="bubble_sortErrorMessage" formatted="false">El último intercambio satisfactorio fue entre elementos en los lugares %d y %d. Continua las comparaciones a derechas.</string>
+<string name="bubble_bubbleErrorMessage" formatted="false">Cuando uses el ordenamiento de la Burbuja, sólo se pueden intercambiar elementos vecinos. %s</string>
+
+<!-- Code - InsertionSortPosition.java -->
+<string name="insert_sortStartMessage">Inicia el algoritmo situando el elemento en el segundo lugar dentro de la variable temporal de abajo a la derecha</string>
+<string name="insert_startMessage" formatted="false">Inicia el paso #%d, iniciando con el elemento en el lugar %d. Usa la variable temporal para almacenar ese elemento.</string>
+<string name="insert_endMessage" formatted="false">Termina el paso #%d usando la variable temporal</string>
+<string name="insert_copyFirstMessage" formatted="false">Mueve elementos a la derecha (empezando con el elemento en lugar %d), moviendo hacia el inicio del vector hasta que encuentres el lugar apropiado para el elemento almacenado en la variable temporal.</string>
+<string name="insert_copyMessage" formatted="false">Continua ordenando moviendo el elemento al punto %d a derechas.</string>
+<string name="insert_copyErrorMessage">Los elementos son movidos mediante la copia del elemento de la izquierda en su vecino hacia la derecha, si el elemento de la izquierda es mayor entonces el elemento es almacenado en la variable temporal.</string>
+<string name="insert_copyOrderErrorMessage">En la copia de los elementos en el vector se consciente del orden en el que lo haces. Primero selecciona el elemento a copiar y selecciona el lugar de destino.</string>
+<string name="insert_errorMessage_suggestCopyHelper">Paso incorrecto. El siguitente paso del algoritmo debería ser copiar el elemento almacenado en la variable temporal en el lugar %d.</string>
+<string name="insert_errorMessage_suggestCopyIntoHelper" formatted="false">Paso incorrecto. El siguitente paso del algoritmo debería ser copiar el elemento en el lugar %d dentro de la variable temporal.</string>
+<string name="insert_errorMessage_suggestCopyIntoSlot" formatted="false">Paso incorrecto. El siguiente paso del algoritmo debería ser copiar el elemento en el lugar %d dentro del lugar %d.</string>
+
+<!-- Code - QuickSortPosition.java -->
+<string name="quick_sortStartMessage">Iniciar el ordenamiento calculando la mediana de los elementos en los lugares 1, 4 y 8 comparandolos e intercambiandolos si es necesario. Si ningún intercambio es necesario, oculta el pivote en el lugar siguiente-a-último.</string>
+<string name="quick_median" formatted="false">Calcula la mediana de los elementos en el lugar %d, el lugar central (izquierda) y el lugar %d comparandolos e intercambiandolos si es necesario.</string>
+<string name="quick_hidden">Oculta el pivote en el lugar siguiente-a-último.</string>
+<string name="quick_regularQs" formatted="false">Encuentra un elemento igual o mayor que el pivote en los elementos a la derecha del elemento en el lugar %d. Encuentra un elemento menor o igual que el pivote en los elementos que preceden el elemento en el lugar %d. Intercambialos o devuelve el pivote a su lugar.</string> 
+<string name="quick_returnSt" formatted="false">Devuelve el pivote a su lugar. (Lugar %d)</string>
+<string name="quick_insertion" formatted="false">Sort the subarray between spots %d and %d using the Insertion Sort algorithm.</string>
+<string name="quick_median_12" formatted="false">%s (el elemento primero y central)</string>
+<string name="quick_median_13" formatted="false">%s (el elemento primero y último)</string>
+<string name="quick_median_23" formatted="false">%s (el elemento central y último )</string>
+<string name="quick_hidden_hint" formatted="false">%s (intercambialo con el elemento en la posición %d)</string>
+<string name="quick_regularQs_continue" formatted="false">Continuar. %s</string>
+
+
+<!-- Code - SelectionSortPosition.java -->
+<string name="select_sortStartMessage">Inicia el ordenamiento intercambiando el primer elemento con el elemento menor.</string>
+<string name="select_mainMessage" formatted="false">Intercambia el elemento menor del vector a la derecha del elemento en el lugar %d con el elemento en el lugar %d.</string>
+<string name="select_errorMessage" formatted="false">El vector está ahora ordenado hasta el elemento %d. Continua ordenando intercambiando el elemento menor a la derecha del elemento en el lugar %d con el elemento en el lugar %d.</string>
+
+<!-- Code - ShellSortPosition.java -->
+<string name="shell_stepStart" formatted="false">Inicia el ordenamiento con el paso hk = %d. Primero copia el elemento en el lugar %d dentro de la variable temporal.</string>
+<string name="shell_stepContinue" formatted="false">Continua ordenando con el paso hk = %d. Primero copia el elemento en el lugar %d dentro de la variable temporal.</string>
+<string name="shell_stepCompare" formatted="false">Compara los elementos en los lugares %d y %d. Si es necesario, intercambia el elemento en el lugar %d con el elemento en el lugar %d.</string>
+<string name="shell_stepReturn">Devuelve el elemento almacenado en la variable temporal en el lugar apropiado.</string>
+<string name="shell_stepInsertionSort">Ordena usando el paso de ordenamiento por inserción. (hk = 1)</string>
+<string name="shell_copyOrderErrorMessage">En la copia de elementos en el vector se consciente del orden en el que lo haces. Primero selecciona el elemento a copiar y después seleciona el lugar de destino.</string>
+
+ <!-- Menu - options_menu.xml -->
+<string name="menu_help">Ayuda</string>
+<string name="menu_about">Acerca de Sortko</string>
+
+</resources>

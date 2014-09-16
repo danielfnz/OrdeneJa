@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#272626">
+
+<LinearLayout
+	android:id="@+id/newresult"
+	android:layout_alignParentLeft="true"
+	android:orientation="vertical"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content">
+    <ImageView android:id="@+id/logo"
+		android:layout_alignParentLeft="true"
+		android:src="@drawable/sortko"
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:paddingTop="10dp"
+	    android:paddingLeft="10dp">
+	</ImageView>
+	<LinearLayout
+		android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+		android:paddingLeft="10dp"
+		android:gravity="center"
+		android:orientation="vertical">
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:paddingTop="20dp"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/achievedresult"
+		    android:textColor="#fff"
+		    android:text="@string/achievedresult"
+		/>
+		<TextView android:id="@+id/result"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"
+		    android:paddingTop="10dp"
+		    android:textStyle="bold"
+		    android:textSize="@dimen/result"
+		    android:textColor="#fff"
+		    android:text="0"
+		/>
+		<Button android:text="@string/selectsort" 
+			android:id="@+id/selectsort"
+			android:layout_marginTop="30dp"
+			android:background="@drawable/button"
+			android:textColor="#ffffff"
+			android:textSize="@dimen/selectsort"
+			android:textStyle ="bold"
+		   	android:layout_width="wrap_content"
+		   	android:layout_height="wrap_content"
+		   	android:gravity="center">
+		</Button>
+	</LinearLayout>
+</LinearLayout>
+<LinearLayout
+	android:orientation="vertical"
+	android:layout_toRightOf="@id/newresult"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_marginLeft="20dp"
+	android:layout_marginTop="10dp">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_toRightOf="@id/newresult"
+		android:layout_marginRight="10dp"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	    <TextView
+	    	android:id="@+id/listtitle"
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textStyle="bold"
+			android:textSize="@dimen/overallresults"
+			android:textColor="#fff"
+	    	android:text="@string/overallresults">
+	    </TextView>
+	    <TextView
+	    	android:id="@+id/changeList"
+			android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@+id/sortname"
+		    android:layout_marginLeft="10dp"
+		    android:paddingTop="7dp"
+		    android:textStyle="bold"
+			android:textSize="@dimen/overall"
+			android:textColor="#ff7d00"
+	    	android:text="@string/overall">
+	    </TextView>
+    </LinearLayout>
+    
+	<ListView
+		android:id="@+id/android:list"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#272626">
+	</ListView>
+	<TextView
+   		android:id="@+id/android:empty"
+   		android:layout_marginTop="10dp"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+    	android:text="@string/empty_list"/>
+</LinearLayout>
+</RelativeLayout>
