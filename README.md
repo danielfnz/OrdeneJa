@@ -1,4 +1,4 @@
-OrdenaJa
+﻿OrdenaJa
 ========
 Este aplicativo tem o motivo de ensinar formas de ordenação para a disciplina de estrutura de dados.
 
@@ -13,3 +13,4 @@ Cronograma
 4 - Criar níveis, tempo limite, complicar as coisas.
 
 Este cronograma é apenas um abstrato, precisa ser melhorado.
+Paulo
