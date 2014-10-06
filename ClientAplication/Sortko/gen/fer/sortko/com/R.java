@@ -9,9 +9,41 @@ package fer.sortko.com;
 
 public final class R {
     public static final class array {
-        public static final int sorts=0x7f050000;
+        public static final int sorts=0x7f060000;
     }
     public static final class attr {
+    }
+    public static final class dimen {
+        /**  result.xml 
+ result.xml 
+ result.xml 
+         */
+        public static final int achievedresult=0x7f040009;
+        /**  button.xml 
+ button.xml 
+ button.xml 
+         */
+        public static final int button=0x7f040008;
+        public static final int changeSort=0x7f040005;
+        public static final int helpvariable=0x7f040007;
+        public static final int overall=0x7f04000d;
+        public static final int overallresults=0x7f04000c;
+        public static final int result=0x7f04000a;
+        public static final int results=0x7f040002;
+        public static final int selectsort=0x7f04000b;
+        public static final int sortHelpMessage=0x7f040006;
+        public static final int sortit=0x7f040001;
+        public static final int sortname=0x7f040004;
+        /**  sort.xml 
+ sort.xml 
+ sort.xml 
+         */
+        public static final int sortpoints=0x7f040003;
+        /**  main.xml 
+ main.xml 
+ main.xml 
+         */
+        public static final int username=0x7f040000;
     }
     public static final class drawable {
         public static final int button=0x7f020000;
@@ -19,32 +51,34 @@ public final class R {
         public static final int icon=0x7f020002;
         public static final int selected_button=0x7f020003;
         public static final int sortko=0x7f020004;
-        public static final int total=0x7f020005;
+        public static final int staributton=0x7f020005;
+        public static final int starisortko=0x7f020006;
+        public static final int total=0x7f020007;
     }
     public static final class id {
-        public static final int buttonlist=0x7f060015;
-        public static final int buttonsform=0x7f060009;
-        public static final int changeList=0x7f060010;
-        public static final int changeSort=0x7f060013;
-        public static final int editjmbag=0x7f060008;
-        public static final int editusername=0x7f060006;
-        public static final int helpvariable=0x7f060016;
-        public static final int jmbag=0x7f060007;
-        public static final int listtitle=0x7f06000f;
-        public static final int logo=0x7f060003;
-        public static final int newresult=0x7f06000c;
-        public static final int result=0x7f06000d;
-        public static final int resultnumber=0x7f060002;
-        public static final int resultplace=0x7f060000;
-        public static final int results=0x7f06000b;
-        public static final int resultuser=0x7f060001;
-        public static final int selectsort=0x7f06000e;
-        public static final int sortHelpMessage=0x7f060014;
-        public static final int sortit=0x7f06000a;
-        public static final int sortname=0x7f060011;
-        public static final int sortpoints=0x7f060012;
-        public static final int userdataform=0x7f060004;
-        public static final int username=0x7f060005;
+        public static final int buttonlist=0x7f080013;
+        public static final int buttonsform=0x7f080007;
+        public static final int changeList=0x7f08000e;
+        public static final int changeSort=0x7f080011;
+        public static final int editusername=0x7f080006;
+        public static final int helpvariable=0x7f080014;
+        public static final int listtitle=0x7f08000d;
+        public static final int logo=0x7f080003;
+        public static final int menu_about=0x7f080016;
+        public static final int menu_help=0x7f080015;
+        public static final int newresult=0x7f08000a;
+        public static final int result=0x7f08000b;
+        public static final int resultnumber=0x7f080002;
+        public static final int resultplace=0x7f080000;
+        public static final int results=0x7f080009;
+        public static final int resultuser=0x7f080001;
+        public static final int selectsort=0x7f08000c;
+        public static final int sortHelpMessage=0x7f080012;
+        public static final int sortit=0x7f080008;
+        public static final int sortname=0x7f08000f;
+        public static final int sortpoints=0x7f080010;
+        public static final int userdataform=0x7f080004;
+        public static final int username=0x7f080005;
     }
     public static final class layout {
         public static final int button=0x7f030000;
@@ -53,19 +87,133 @@ public final class R {
         public static final int result=0x7f030003;
         public static final int sort=0x7f030004;
     }
+    public static final class menu {
+        public static final int options_menu=0x7f070000;
+    }
     public static final class string {
-        public static final int app_name=0x7f040001;
-        public static final int empty_list=0x7f040007;
-        public static final int jmbag=0x7f040004;
-        public static final int jmbagDefault=0x7f040009;
-        public static final int resultmessage=0x7f040006;
-        public static final int sortHelpMessage=0x7f040002;
-        public static final int sort_name=0x7f040000;
-        public static final int sortingFault=0x7f04000c;
-        public static final int sortingover=0x7f040008;
-        public static final int sortko_prefrences=0x7f04000b;
-        public static final int unhint=0x7f040005;
-        public static final int username=0x7f040003;
-        public static final int usernameDefault=0x7f04000a;
+        /**  Layout - result.xml 
+ Layout - result.xml 
+ Layout - result.xml 
+ Layout - result.xml 
+         */
+        public static final int achievedresult=0x7f05000c;
+        /**  General strings 
+ General strings 
+ General strings 
+ General strings 
+         */
+        public static final int app_name=0x7f050000;
+        public static final int bubble_bubbleErrorMessage=0x7f05001a;
+        public static final int bubble_bubbleMessage=0x7f050017;
+        public static final int bubble_sortErrorMessage=0x7f050019;
+        /**  Code - BubbleSortPosition.java 
+ Code - BubbleSortPosition.java 
+ Code - BubbleSortPosition.java 
+ Code - BubbleSortPosition.java 
+         */
+        public static final int bubble_sortStartMessage=0x7f050016;
+        public static final int bubble_startMessage=0x7f050018;
+        public static final int change_sort_type=0x7f050012;
+        public static final int empty_list=0x7f050010;
+        public static final int insert_copyErrorMessage=0x7f050020;
+        public static final int insert_copyFirstMessage=0x7f05001e;
+        public static final int insert_copyMessage=0x7f05001f;
+        public static final int insert_copyOrderErrorMessage=0x7f050021;
+        public static final int insert_endMessage=0x7f05001d;
+        public static final int insert_errorMessage_suggestCopyHelper=0x7f050022;
+        public static final int insert_errorMessage_suggestCopyIntoHelper=0x7f050023;
+        public static final int insert_errorMessage_suggestCopyIntoSlot=0x7f050024;
+        /**  Code - InsertionSortPosition.java 
+ Code - InsertionSortPosition.java 
+ Code - InsertionSortPosition.java 
+ Code - InsertionSortPosition.java 
+         */
+        public static final int insert_sortStartMessage=0x7f05001b;
+        public static final int insert_startMessage=0x7f05001c;
+        public static final int menu_about=0x7f05003a;
+        /**  Menu - options_menu.xml 
+ Menu - options_menu.xml 
+ Menu - options_menu.xml 
+ Menu - options_menu.xml 
+         */
+        public static final int menu_help=0x7f050039;
+        public static final int overall=0x7f05000f;
+        public static final int overallresults=0x7f05000e;
+        public static final int progress_description=0x7f050015;
+        /**  Code - ResultsActivity.java 
+ Code - ResultsActivity.java 
+ Code - ResultsActivity.java 
+ Code - ResultsActivity.java 
+         */
+        public static final int progress_title=0x7f050014;
+        public static final int quick_hidden=0x7f050027;
+        public static final int quick_hidden_hint=0x7f05002e;
+        public static final int quick_insertion=0x7f05002a;
+        public static final int quick_median=0x7f050026;
+        public static final int quick_median_12=0x7f05002b;
+        public static final int quick_median_13=0x7f05002c;
+        public static final int quick_median_23=0x7f05002d;
+        public static final int quick_regularQs=0x7f050028;
+        public static final int quick_regularQs_continue=0x7f05002f;
+        public static final int quick_returnSt=0x7f050029;
+        /**  Code - QuickSortPosition.java 
+ Code - QuickSortPosition.java 
+ Code - QuickSortPosition.java 
+ Code - QuickSortPosition.java 
+         */
+        public static final int quick_sortStartMessage=0x7f050025;
+        public static final int results_btntext=0x7f05000b;
+        public static final int select_errorMessage=0x7f050032;
+        public static final int select_mainMessage=0x7f050031;
+        public static final int select_sort=0x7f050003;
+        /**  Code - SelectionSortPosition.java 
+ Code - SelectionSortPosition.java 
+ Code - SelectionSortPosition.java 
+ Code - SelectionSortPosition.java 
+         */
+        public static final int select_sortStartMessage=0x7f050030;
+        public static final int selectsort=0x7f05000d;
+        public static final int shell_copyOrderErrorMessage=0x7f050038;
+        public static final int shell_stepCompare=0x7f050035;
+        public static final int shell_stepContinue=0x7f050034;
+        public static final int shell_stepInsertionSort=0x7f050037;
+        public static final int shell_stepReturn=0x7f050036;
+        /**  Code - ShellSortPosition.java 
+ Code - ShellSortPosition.java 
+ Code - ShellSortPosition.java 
+ Code - ShellSortPosition.java 
+         */
+        public static final int shell_stepStart=0x7f050033;
+        public static final int sortHelpMessage=0x7f050013;
+        /**  Layout - sort.xml 
+ Layout - sort.xml 
+ Layout - sort.xml 
+ Layout - sort.xml 
+         */
+        public static final int sort_name_default=0x7f050011;
+        public static final int sortingFault=0x7f050002;
+        public static final int sortingover=0x7f050001;
+        public static final int sortit_btntext=0x7f05000a;
+        /**  Do not localize 
+         */
+        public static final int sortko_prefrences=0x7f05003d;
+        public static final int uniquestudentid=0x7f050008;
+        public static final int uniquestudentid_Default=0x7f050005;
+        public static final int uniquestudentid_hint=0x7f050009;
+        public static final int url_about=0x7f05003c;
+        public static final int url_domain_webservice=0x7f05003e;
+        /**  Context menu URLs 
+ Context menu URLs 
+         */
+        public static final int url_help=0x7f05003b;
+        public static final int url_path_webservice=0x7f05003f;
+        /**  Layout - main.xml 
+ Layout - main.xml 
+ Layout - main.xml 
+ Layout - main.xml 
+         */
+        public static final int username=0x7f050006;
+        public static final int username_Default=0x7f050004;
+        public static final int username_hint=0x7f050007;
     }
 }
