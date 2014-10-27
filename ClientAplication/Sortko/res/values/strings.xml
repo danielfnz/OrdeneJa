@@ -3,19 +3,34 @@
 
 <!-- General strings -->
 <string name="app_name">OrdeneJá</string>
+<<<<<<< HEAD
 <string name="sortingover">Ordenação completa!</string>
 <string name="sortingFault">&quot;Incorrect sort! Try again!&quot;</string>
 <string name="select_sort">Selecione um alrotimo de ordenação!</string>
+=======
+<string name="sortingover">Sorting completed!</string>
+<string name="sortingFault">&quot;Incorrect sort! Try again!&quot;</string>
+<string name="select_sort">Selecione o algoritmo de ordenação!</string>
+>>>>>>> 7a38d4ecc2f37f42631f5941ef16a8d665aa6df2
 <string name="username_Default">John Doe</string>
 <string name="uniquestudentid_Default">0000000000</string>
 
 <!-- Layout - main.xml -->
+<<<<<<< HEAD
 <string name="username">Nome e sobrenome</string>
 <string name="username_hint">Used for entry into the top players list</string>
 <string name="uniquestudentid">Student ID</string>
 <string name="uniquestudentid_hint">Student ID is used to track progress on the list</string>
 <string name="sortit_btntext">Sort</string>
 <string name="results_btntext">Resultados</string>
+=======
+<string name="descricao">Aplicativo para ensino de metodos de ordenação</string>
+<string name="username_hint">Informe seu login para competir no raking dos melhores</string>
+<string name="uniquestudentid">Student ID</string>
+<string name="uniquestudentid_hint">Student ID is used to track progress on the list</string>
+<string name="sortit_btntext">Algoritmos</string>
+<string name="results_btntext">Ranking</string>
+>>>>>>> 7a38d4ecc2f37f42631f5941ef16a8d665aa6df2
 
 <!-- Menu - options_menu.xml -->
 <string name="menu_help">Ajuda</string>
@@ -34,8 +49,13 @@
 <string name="sortHelpMessage">Change places of two elements by tapping their cells.</string>
 
 <!-- Code - ResultsActivity.java -->
+<<<<<<< HEAD
 <string name="progress_title">Por favor espere...</string>
 <string name="progress_description">Obtendo dados...</string>
+=======
+<string name="progress_title">Aguarde...</string>
+<string name="progress_description">Carregando dados...</string>
+>>>>>>> 7a38d4ecc2f37f42631f5941ef16a8d665aa6df2
 
 <!-- Code - BubbleSortPosition.java -->
 <string name="bubble_sortStartMessage">Start the algorithm by comparing the first two elements. If the left one is larger then the right one, exchange them and continue with comparisons of elements rightwards.</string>

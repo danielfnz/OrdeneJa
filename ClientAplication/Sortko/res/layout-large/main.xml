@@ -6,7 +6,7 @@
 
 <ImageView android:id="@+id/logo"
 	android:layout_alignParentLeft="true"
-	android:src="@drawable/sortko"
+	android:src="@drawable/logo"
     android:layout_width="wrap_content" 
     android:layout_height="wrap_content"
     android:paddingTop="10dp"
@@ -22,7 +22,7 @@
     android:gravity="center"
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content">
-	<TextView android:id="@+id/username"
+	<TextView android:id="@+id/descricao"
 		android:layout_alignParentRight="true"
 	    android:layout_width="wrap_content" 
 	    android:layout_height="wrap_content" 
@@ -51,7 +51,7 @@
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content"
     android:gravity="center">
-    	<Button android:id="@+id/sortit"
+    	<Button android:id="@+id/escolhaMetodo"
     		android:text="@string/sortit_btntext" 
     		android:layout_width="wrap_content"
     		android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
 			android:textStyle ="bold"
     	    android:paddingTop="10dp">
     	</Button>
-		<Button android:id="@+id/results"
+		<Button android:id="@+id/ranking"
 			android:text="@string/results_btntext"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"

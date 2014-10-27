@@ -1,77 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="fill_parent"
-    android:background="#272626">
-
-<ImageView android:id="@+id/logo"
-	android:layout_alignParentLeft="true"
-	android:src="@drawable/sortko"
-    android:layout_width="wrap_content" 
-    android:layout_height="wrap_content"
-    android:paddingTop="10dp"
-    android:paddingLeft="10dp">
-</ImageView>
-    
-<LinearLayout android:id="@+id/userdataform"
-    android:layout_below="@id/logo"
-    android:layout_marginTop="5dp"
-    android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content">
-	<TextView android:id="@+id/username"
-		android:layout_alignParentRight="true"
-	    android:layout_width="wrap_content" 
-	    android:layout_height="wrap_content" 
-	    android:paddingTop="3dp"
-	    android:textStyle="bold"
-	    android:textSize="@dimen/username"
-	    android:textColor="#fff"
-	    android:text="@string/username"
-    />
-	<EditText android:id="@+id/editusername"
-		android:layout_width="fill_parent"
-		android:layout_height="wrap_content"
-		android:layout_gravity="center"
-		android:hint="@string/username_hint"
-		android:gravity="center"
-		android:layout_marginTop="10dp"
-		android:layout_marginLeft="30dp"
-		android:layout_marginRight="30dp">
-	</EditText>
-	
-	
-	
-	<LinearLayout android:id="@+id/buttonsform"
-    android:layout_marginTop="20dp"
     android:orientation="horizontal"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content"
-    android:gravity="center">
-    	<Button android:id="@+id/sortit"
-    		android:text="@string/sortit_btntext" 
-    		android:layout_width="wrap_content"
-    		android:layout_height="wrap_content"
-    		android:background="@drawable/button"
-    		android:textColor="#ffffff"	
-    		android:textSize="@dimen/sortit"
-			android:textStyle ="bold"
-    	    android:paddingTop="10dp">
-    	</Button>
-		<Button android:id="@+id/results"
-			android:text="@string/results_btntext"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:background="@drawable/button"
-			android:textColor="#ffffff"
-			android:textSize="@dimen/results"
-			android:textStyle ="bold"
-		    android:paddingTop="10dp"
-		    android:layout_marginLeft="10dp">
-		</Button>
+    android:tileMode="repeat"
+	android:dither="true"
+     android:background="@drawable/background" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:src="@drawable/logo" >
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/userdataform"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:text="@string/descricao"
+            android:textColor="#fff"
+            android:textSize="@dimen/username"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="@string/username_hint" >
+        </EditText>
     </LinearLayout>
-</LinearLayout>
+
+    <Button
+        android:id="@+id/escolhaMetodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ranking"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:background="@drawable/btescolha"
+        android:textColor="#605534"
+        android:textSize="@dimen/results"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/ranking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/btmelhorespontuacoes"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/results"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btComoOrdenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/escolhaMetodo"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btcomoordenar"
+        android:layout_marginRight="35dp"
+     	android:textColor="#605534"
+        android:textSize="@dimen/results"
+        android:textStyle="bold" />
+
 </RelativeLayout>
