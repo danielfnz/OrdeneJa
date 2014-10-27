@@ -7,7 +7,7 @@
         
     <!-- sort.xml -->
      <dimen name="sortpoints">32sp</dimen>
-     <dimen name="sortname">22sp</dimen>
+     <dimen name="sortname">17sp</dimen>
      <dimen name="changeSort">13sp</dimen>
      <dimen name="sortHelpMessage">16sp</dimen>
      <dimen name="helpvariable">24sp</dimen>
@@ -21,4 +21,5 @@
      <dimen name="selectsort">20sp</dimen>
      <dimen name="overallresults">18sp</dimen>
      <dimen name="overall">13sp</dimen>
+     <dimen name="indices">19sp</dimen>
 </resources>
