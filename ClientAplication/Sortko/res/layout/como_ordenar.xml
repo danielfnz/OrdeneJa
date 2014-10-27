@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:minHeight="50dp"
+        android:paddingLeft="10dp"
+ 	    android:src="@drawable/logo" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/como_objetivo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:maxLines="3"
+        android:paddingLeft="12dp"
+        android:paddingTop="5dp"
+        android:textColor="#fff"
+        android:text="O aplicativo tem como objetivo de auxiliar no ensino do metodos de ordenação mais conhecidos."
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/comoFunciona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/como_objetivo"
+        android:paddingLeft="10dp"
+        android:text="COMO FUNCIONA O APLICATIVO:"
+        android:textColor="#fff"
+        android:textSize="@dimen/indices"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/passo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/comoFunciona"
+        android:paddingLeft="10dp"
+        android:textColor="#412104"
+        android:textStyle="bold"
+        android:text="1º - Informe seu login de usuario." />
+
+    <TextView
+        android:id="@+id/passo_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/passo_1"
+        android:paddingLeft="10dp"
+       android:textColor="#412104"
+         android:textStyle="bold"
+        android:text="2º - Selecione o metodo de ordenação desejado." />
+
+    <TextView
+        android:id="@+id/passo_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/passo_2"
+        android:paddingLeft="10dp"
+         android:textStyle="bold"
+     android:textColor="#412104"
+        android:text="3º - Escolha o nivel de dificuldade em que você se encaixe." />
+    
+        <TextView
+        android:id="@+id/passo_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/passo_3"
+        android:paddingLeft="10dp"
+        android:textColor="#412104"
+         android:textStyle="bold"
+        android:text="4º - Clique em começar ordenação." />
+        
+        <TextView
+            android:id="@+id/comoOrdena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passo_4"
+            android:paddingLeft="10dp"
+            android:text="COMO FUNCIONA A ORDENAÇÃO:"
+            android:textColor="#fff"
+            android:textSize="@dimen/indices"
+            android:textStyle="bold" />
+        
+       <TextView
+        android:id="@+id/passo_1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/comoOrdena"
+        android:paddingLeft="10dp"
+        android:textColor="#412104"
+        android:textStyle="bold"
+        android:text="O objetivo da Ordenação se da pela organização dos elementos em forma crescente." />
+
+    <TextView
+        android:id="@+id/passo_1_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/passo_1_1"
+        android:paddingLeft="10dp"
+        android:textColor="#412104"
+        android:textStyle="bold"
+        android:text="Para organizar um elemento, deve-se seleciona-lo, e de acordo com o metodo de ordenação, selecionar o elemento que sera feita a troca." />
+
+</RelativeLayout>

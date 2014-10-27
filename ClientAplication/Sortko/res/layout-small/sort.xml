@@ -7,7 +7,7 @@
 
 <ImageView android:id="@+id/logo"
 	android:layout_alignParentLeft="true"
-	android:src="@drawable/sortko"
+	android:src="@drawable/logo"
     android:layout_width="wrap_content" 
     android:layout_height="wrap_content"
     android:minHeight="50dp"
