@@ -27,6 +27,7 @@ public class Main extends Activity{
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		//Criando acivity
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,   
@@ -38,13 +39,14 @@ public class Main extends Activity{
         Button sortit = (Button)findViewById(R.id.escolhaMetodo);
         sortit.setOnClickListener(myListener);
         
+        //Criando Botao Como Ordenar e seu listener
+        Button btComoOrdenar = (Button)findViewById(R.id.btComoOrdenar);
+        btComoOrdenar.setOnClickListener(myListener);
+        
         //Criando Botao Melhores Pontuacoes e seu listener
         Button ranking = (Button)findViewById(R.id.ranking);
         ranking.setOnClickListener(myListener);
         
-        //Criando Botao Como Ordenar e seu listener
-        Button btComoOrdenar = (Button)findViewById(R.id.btComoOrdenar);
-        btComoOrdenar.setOnClickListener(myListener);
         
         //Criando visualizacao campo username
         usernameedit = (EditText)findViewById(R.id.editusername);
@@ -60,10 +62,11 @@ public class Main extends Activity{
 	    public void onClick(View v) {
 	    	savePreferences();
 	    	if (v.getId()==R.id.btComoOrdenar){
-	    		setContentView(R.layout.como_ordenar);
+	    		startActivity(new Intent(Main.this,ComoOrdenar.class));
 	    	}
 	    	if (v.getId()==R.id.escolhaMetodo){
-	    		selectSort();
+	    		startActivity(new Intent(Main.this,EscolhaAlgoritmo.class));
+	    		
 	    	} if (v.getId()==R.id.ranking) {
 	    		Intent resultIntent = new Intent(Main.this,ResultsActivity.class);
 	    		startActivity(resultIntent);
@@ -85,9 +88,9 @@ public class Main extends Activity{
 	    inflater.inflate(R.menu.options_menu, menu);
 	    return true;
 	}
-	//Caso selecionado, fazer
+	//switch case selecionado, fazer
 	public boolean onOptionsItemSelected(MenuItem item) {
-	    // Handle item selection
+	    // Intent serve para chamar alguma outra aplicacao ou pagina web
 		Intent browserIntent;
 		switch (item.getItemId()) {
 	        case R.id.menu_help:

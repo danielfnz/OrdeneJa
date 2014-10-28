@@ -7,18 +7,18 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="fill_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:minHeight="50dp"
+        android:paddingLeft="10dp"
         android:src="@drawable/logo" >
     </ImageView>
 
-       <TextView
+    <TextView
         android:id="@+id/comoFunciona"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-      	 android:layout_below="@+id/logo"
+        android:layout_below="@+id/logo"
         android:paddingLeft="10dp"
         android:text="Escolha o metodo de ordenação:"
         android:textColor="#fff"
@@ -26,49 +26,105 @@
         android:textStyle="bold" />
 
     <RadioGroup
-        android:id="@+id/radioGroup1"
+        android:id="@+id/radioAlgoritmo"
         android:layout_width="wrap_content"
+        android:layout_below="@id/comoFunciona"
         android:layout_height="wrap_content" >
-</RadioGroup>
-
-    <RadioButton
-        android:id="@+id/bubbleSort"
+    
+     <RadioButton
+        android:id="@+id/algoritmo_bubbleSort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/comoFunciona"
-        android:layout_toRightOf="@+id/radioGroup1"
+        android:layout_toRightOf="@+id/radioAlgoritmo"
+        android:layout_marginLeft="5dp"
         android:text="Bubble Sort" />
-    
-       <RadioButton
-        android:id="@+id/insertionSort"
+
+    <RadioButton
+        android:id="@+id/algoritmo_insertionSort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/bubbleSort"
-        android:layout_toRightOf="@+id/radioGroup1"
+        android:layout_below="@+id/algoritmo_bubbleSort"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/radioAlgoritmo"
         android:text="Insertion Sort" />
-       
-        <RadioButton
-        android:id="@+id/quickSort"
+
+    <RadioButton
+        android:id="@+id/algoritmo_quickSort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/insertionSort"
-        android:layout_toRightOf="@+id/radioGroup1"
+        android:layout_below="@+id/algoritmo_insertionSort"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/radioAlgoritmo"
         android:text="Quick Sort" />
-        
-         <RadioButton
-        android:id="@+id/shellSort"
+
+    <RadioButton
+        android:id="@+id/algoritmo_shellSort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/quickSort"
-        android:layout_toRightOf="@+id/radioGroup1"
+        android:layout_below="@+id/algoritmo_quickSort"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/radioAlgoritmo"
         android:text="Shell Sort" />
-         
-             <RadioButton
-        android:id="@+id/selectionSort"
+
+    <RadioButton
+        android:id="@+id/algoritmo_selectionSort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/shellSort"
-        android:layout_toRightOf="@+id/radioGroup1"
+        android:layout_below="@+id/algoritmo_shellSort"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/radioAlgoritmo"
         android:text="Selection Sort" />
+   </RadioGroup>
+
+      <RadioGroup
+          android:id="@+id/radioDificuldade"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignLeft="@+id/escolhaDificudade"
+          android:layout_below="@+id/escolhaDificudade" >
+
+          <RadioButton
+              android:id="@+id/dificuldade_iniciante"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/radioDificuldade"
+              android:text="Iniciante" />
+
+          <RadioButton
+              android:id="@+id/dificuldade_intermediario"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/iniciante"
+              android:text="Intermediario" />
+
+          <RadioButton
+              android:id="@+id/dificuldade_avancado"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/intermediario"
+              android:text="Avançado" />
+      </RadioGroup>
+
+      <TextView
+          android:id="@+id/escolhaDificudade"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignTop="@+id/radioAlgoritmo"
+          android:layout_marginRight="59dp"
+          android:layout_marginTop="44dp"
+          android:text="Escolha o nivel de dificuldade:"
+          android:textColor="#fff"
+          android:textSize="@dimen/indices"
+          android:textStyle="bold" />
+
+      <Button
+          android:id="@+id/btIniciar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:layout_alignRight="@+id/escolhaDificudade"
+          android:background="@drawable/btiniciar" />
 
 </RelativeLayout>
