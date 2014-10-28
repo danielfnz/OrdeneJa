@@ -5,13 +5,19 @@ Este Aplicativo Educacional Digital tem como objetivo, apoio no Ensino de formas
 
 Cronograma
 
-1 - Traduzir os label
+1 - Desenhar o layout.
 
-2 - Deixar o app mais didatico, informando erros
+2 - Implementar o novo layout.
 
-3 - Adicionar outros métodos de ordenação
+3 - Implementar o novo layout para fazer as chamadas dos algoritmos.
 
-4 - Criar níveis, tempo limite, complicar as coisas.
+4 - Implentar os niveis de dificuldades.
+
+5 - Deixar o app mais didatico, informando erros
+
+6 - Adicionar outros métodos de ordenação
+
+7 - Criar níveis, tempo limite, complicar as coisas.
 
 Este cronograma é apenas um abstrato, precisa ser melhorado.
 Paulo
