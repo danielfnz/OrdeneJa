@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#272626">
+        android:tileMode="repeat"
+	android:dither="true"
+     android:background="@drawable/background" >
 
 <LinearLayout
 	android:id="@+id/newresult"

@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#272626"
-    android:gravity="center_horizontal">
+    android:background="@drawable/background"
+    android:gravity="center_horizontal" >
 
 <ImageView android:id="@+id/logo"
 	android:layout_alignParentLeft="true"
@@ -90,5 +90,26 @@
 	android:textColor="#ffffff"
 	android:layout_margin ="12dp">
 </Button>
+
+<Chronometer
+    android:id="@+id/chronometer1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/changeSort"
+    android:layout_marginRight="60dp"
+    android:layout_marginTop="23dp"
+    android:layout_toLeftOf="@+id/helpvariable"
+    android:textSize="@dimen/indices" />
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginRight="60dp"
+    android:layout_toLeftOf="@+id/sortpoints"
+    android:text="Tempo Restante"
+    android:textColor="#FFFF"
+    android:textSize="@dimen/selectsort" />
 
 </RelativeLayout>

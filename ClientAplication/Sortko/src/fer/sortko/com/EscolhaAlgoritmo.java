@@ -2,6 +2,7 @@ package fer.sortko.com;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -32,7 +33,9 @@ public class EscolhaAlgoritmo extends Activity {
 				
 				//BubbleSort nivel iniciante
 				if ((opAlgoritmo == R.id.algoritmo_bubbleSort)	&& (opDificuldade == R.id.dificuldade_iniciante)) {
-				mostraalerta("Algoritmo bubble sort","Nivel iniciante");
+					Intent sortIntent = new Intent(v.getContext(),SortingActivity.class);
+			    	  sortIntent.putExtra("fer.sortko.com.sortTypeNumber", 0);
+			    	  startActivity(sortIntent);
 				}
 				//BubbleSort nivel intermediario
 				if ((opAlgoritmo == R.id.algoritmo_bubbleSort)	&& (opDificuldade == R.id.dificuldade_intermediario)) {

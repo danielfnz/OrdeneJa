@@ -22,15 +22,15 @@
 <string name="menu_about">About Sortko</string>
 
 <!-- Layout - result.xml -->
-<string name="achievedresult">Achieved results:</string>
-<string name="selectsort">Choose sort</string>
-<string name="overallresults">Overall results</string>
+<string name="achievedresult">Sua Pontuação:</string>
+<string name="selectsort">Alterar Metodo</string>
+<string name="overallresults">Melhores Pontuações</string>
 <string name="overall">overall</string>
-<string name="empty_list">The list could not be retrieved.</string>
+<string name="empty_list">A lista não pode ser carregada</string>
 
 <!-- Layout - sort.xml -->
 <string name="sort_name_default">Generic sort</string>
-<string name="change_sort_type">change</string>
+<string name="change_sort_type">Alterar</string>
 <string name="sortHelpMessage">Change places of two elements by tapping their cells.</string>
 
 <!-- Code - ResultsActivity.java -->
@@ -38,7 +38,7 @@
 <string name="progress_description">Carregando dados...</string>
 
 <!-- Code - BubbleSortPosition.java -->
-<string name="bubble_sortStartMessage">Start the algorithm by comparing the first two elements. If the left one is larger then the right one, exchange them and continue with comparisons of elements rightwards.</string>
+<string name="bubble_sortStartMessage">Iniciar o algoritmo comparando os dois primeiros elementos. Se o esquerdo é maior, então deve-se trocá-los e continuar comparando os elementos dois a dois.</string>
 <string name="bubble_bubbleMessage">Exchange the neighbouring elements if the left one is larger then the right one.</string>
 <string name="bubble_startMessage" formatted="false">Start pass #%d from the left. %s</string>
 <string name="bubble_sortErrorMessage" formatted="false">The last successful exchange was between elements at spots %d and %d. Continue comparisons rightwards.</string>

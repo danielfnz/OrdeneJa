@@ -46,7 +46,7 @@ public class SortingActivity extends Activity implements OnClickListener {
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);  
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,   
-				WindowManager.LayoutParams.FLAG_FULLSCREEN);  
+		WindowManager.LayoutParams.FLAG_FULLSCREEN);  
 
 		setContentView(R.layout.sort);
 
@@ -166,19 +166,8 @@ public class SortingActivity extends Activity implements OnClickListener {
 	
 	private void changeSort(){
 		Resources resources = getResources();
-		final CharSequence[] items = resources.getStringArray(R.array.sorts);
-		AlertDialog.Builder builder = new AlertDialog.Builder(this);
-		builder.setTitle(this.getString(R.string.select_sort));
-		builder.setItems(items, new DialogInterface.OnClickListener() {
-			public void onClick(DialogInterface dialog, int item) {
-				Intent sortIntent = new Intent(SortingActivity.this,SortingActivity.class); 
-				sortIntent.putExtra("fer.sortko.com.sortTypeNumber", item);
-				startActivity(sortIntent);
-				finish();
-			}
-		});
-		AlertDialog alert = builder.create();
-		alert.show();
+		startActivity(new Intent(this,EscolhaAlgoritmo.class));
+		
 	}
 	private void selectButton(int buttonNumber){
 		
