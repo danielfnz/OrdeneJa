@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".InsertionHelp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backvertical"
+        android:gravity="center_horizontal"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/logo" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/comoFunciona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:paddingLeft="10dp"
+            android:text="Insertion Sort"
+            android:textColor="#fff"
+            android:textSize="@dimen/sortpoints"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/comoOrdena"
+            android:paddingLeft="10dp"
+            android:textColor="#412104"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comoOrdena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/comoFunciona"
+            android:layout_marginTop="34dp"
+            android:paddingLeft="10dp"
+            android:text="COMO FUNCIONA A ORDENAÇÃO:"
+            android:textColor="#fff"
+            android:textSize="@dimen/indices"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:paddingLeft="10dp"
+            android:text="- Primeiramente, coloque elemento da posição 1 na variável auxiliar."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:paddingLeft="10dp"
+            android:text="- Olhe para o elemento na posição anterior, se ele for menor que o elemento que está na variável auxiliar, então coloque este elemento na próxima posição."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView03"
+            android:paddingLeft="10dp"
+            android:text="- Após fazer isso com todos os elementos que forem maiores a esquerda do elemento da variável auxiliar, então coloque o elemento que está na variável auxiliar na posição do primeiro elemento a esquerda movimentado"
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView04"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/TextView01"
+            android:paddingLeft="10dp"
+            android:text="Exemplo:"
+            android:textColor="#fff"
+            android:textSize="@dimen/indices"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView05"
+            android:layout_below="@+id/TextView09"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/insert_passo1" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:paddingLeft="10dp"
+            android:text="2-Agora, verificar se o elemento a esquerda é menor que 5, como não é, volte o 5 para sua antiga posição."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="21dp"
+            android:paddingLeft="10dp"
+            android:text="3- Pegue o elemento da posição 2 e coloque na variável auxiliar"
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/TextView07"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/insert_passo3" />
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView3"
+            android:paddingLeft="10dp"
+            android:text="4- Verifique se os elementos das posições anteriores são menores. Como são, você deve move-los para as posições posteriores."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView05"
+            android:paddingLeft="10dp"
+            android:text="1- Você deve colocar o segundo elemento (5) na variável auxiliar ."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/TextView06"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/insert_passo2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_below="@+id/TextView08"
+            android:src="@drawable/insert_passo4" />
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="10dp"
+            android:text="5- Depois de mover todos os que são maiores que o elemento que está na variável auxiliar, mova o elemento da variável auxiliar para a posição do elemento mais a esquerda movido "
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_below="@+id/TextView10"
+            android:src="@drawable/insert_passo5" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+	android:textSize="15dp"
+	android:textStyle ="bold"
+	android:clickable="false"
+	android:background="@drawable/vetor"
+	android:textColor="#ffffff"
+	android:layout_marginLeft="5dp"
+	android:layout_width="53dp"
+	android:layout_height="18dp"/>

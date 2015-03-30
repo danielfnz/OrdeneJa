@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout
+   android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backvertical"
+    android:gravity="center_horizontal"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:src="@drawable/logo" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/comoFunciona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:paddingLeft="10dp"
+        android:text="Bubble Sort"
+        android:textColor="#fff"
+        android:textSize="@dimen/sortpoints"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/comoOrdena"
+        android:paddingLeft="10dp"
+        android:textColor="#412104"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/comoOrdena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/comoFunciona"
+        android:layout_marginTop="34dp"
+        android:paddingLeft="10dp"
+        android:text="COMO FUNCIONA A ORDENAÇÃO:"
+        android:textColor="#fff"
+        android:textSize="@dimen/indices"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView01"
+        android:paddingLeft="10dp"
+        android:text="- Percorra o vetor inteiro comparando elementos adjacentes (dois a dois)."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView02"
+        android:paddingLeft="10dp"
+        android:text="- Troque as posições dos elementos se eles estiverem fora de ordem."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView03"
+        android:paddingLeft="10dp"
+        android:text="- Repita os dois passos acima com os primeiros n-1 itens, depois com os primeiros n-2 itens, até que reste apenas um item."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView04"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/TextView01"
+        android:paddingLeft="10dp"
+        android:text="Exemplo:"
+        android:textColor="#fff"
+        android:textSize="@dimen/indices"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView05"
+        android:layout_below="@+id/TextView09"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/bublle_passo1" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:paddingLeft="10dp"
+        android:text="2-Sim, é maior. Você deve trocar o elemento 4 com o elemento 1."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="21dp"
+        android:paddingLeft="10dp"
+        android:text="3- Verifique que o elemento 4 não é maior que o elemento 7, assim deve fazer a comparação entre 7 e 4."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/TextView07"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/bublle_passo3" />
+
+    <TextView
+        android:id="@+id/TextView08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView3"
+        android:paddingLeft="10dp"
+        android:text="4- Verifique que o elemento 7 é maior que o elemento 4, assim deve troca-los."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/TextView05"
+        android:paddingLeft="10dp"
+        android:text="1- Você deve verificar se o 1º elemento  é maior que o 2º elemento ."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/TextView06"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/bublle_passo2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_below="@+id/TextView08"
+        android:src="@drawable/bublle_passo4" />
+
+    <TextView
+        android:id="@+id/TextView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="18dp"
+        android:paddingLeft="10dp"
+        android:text="5- Após está troca seus elementos estão ordenados."
+        android:textColor="#fff"
+        android:textSize="@dimen/sortHelpMessage"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView4"
+        android:layout_below="@+id/TextView10"
+        android:src="@drawable/bublle_passo5" />
+
+</RelativeLayout>
+
+</ScrollView>

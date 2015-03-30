@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".SelectionHelp" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backvertical"
+        android:gravity="center_horizontal"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="10dp"
+            android:src="@drawable/logo" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/comoFunciona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:paddingLeft="10dp"
+            android:text="Selection Sort"
+            android:textColor="#fff"
+            android:textSize="@dimen/sortpoints"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/comoOrdena"
+            android:paddingLeft="10dp"
+            android:textColor="#412104"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/comoOrdena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/comoFunciona"
+            android:layout_marginTop="34dp"
+            android:paddingLeft="10dp"
+            android:text="COMO FUNCIONA A ORDENAÇÃO:"
+            android:textColor="#fff"
+            android:textSize="@dimen/indices"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView01"
+            android:paddingLeft="10dp"
+            android:text="- Troque o primeiro elemento do vetor com o menor elemento a sua direita"
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView02"
+            android:paddingLeft="10dp"
+            android:text="- Faça isto para a próxima posição do vetor, até chegar no último elemento do vetor"
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView03"
+            android:paddingLeft="10dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView04"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/TextView01"
+            android:paddingLeft="10dp"
+            android:text="Exemplo:"
+            android:textColor="#fff"
+            android:textSize="@dimen/indices"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView05"
+            android:layout_below="@+id/TextView09"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/selection_passo1" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:paddingLeft="10dp"
+            android:text="2-Como existe um elemento menor, você deve fazer a troca."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="21dp"
+            android:paddingLeft="10dp"
+            android:text="Com a próxima posição também, que vai ficar assim."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_below="@+id/TextView07"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/selection_passo3" />
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView3"
+            android:paddingLeft="10dp"
+            android:text="Agora, basicamente repita as passos 1 e 2 para todas as posições do vetor."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/TextView05"
+            android:paddingLeft="10dp"
+            android:text="1- Você selecionar o primeiro elemento(3) do vetor e trocar pelo o menor a sua direita(2)."
+            android:textColor="#fff"
+            android:textSize="@dimen/sortHelpMessage"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/TextView06"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/selection_passo2" />
+    </RelativeLayout>
+
+</ScrollView>
